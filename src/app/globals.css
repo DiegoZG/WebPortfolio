@@ -6,11 +6,11 @@
   :root {
     --background: 222 47% 4%;
     --foreground: 210 40% 98%;
-    --primary: 220 80% 48%;
+    --primary: 220 80% 38%;
     --primary-foreground: 210 40% 98%;
     --secondary: 221 39% 16%;
     --secondary-foreground: 210 40% 98%;
-    --accent: 220 80% 56%;
+    --accent: 220 80% 46%;
     --accent-foreground: 210 40% 98%;
     --muted: 217 32% 17%;
     --muted-foreground: 215 20% 65%;
@@ -18,7 +18,7 @@
     --card-foreground: 210 40% 98%;
     --border: 217 32% 17%;
     --input: 217 32% 17%;
-    --ring: 220 80% 48%;
+    --ring: 220 80% 38%;
   }
 }
 
@@ -103,4 +103,17 @@
 .scale-in.visible {
   opacity: 1;
   transform: scale(1);
+}
+
+/* Hide native scrollbar on desktop for a cleaner look */
+@media (min-width: 768px) {
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  html,
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 } 

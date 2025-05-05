@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { EXPERIENCES } from "@/constants/portfolio";
 import { formatDate } from "@/lib/utils";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { AnimatedPikachu } from "@/components/icons/AnimatedPikachu";
 
 export function Experience() {
   const expRef = useScrollAnimation();
@@ -12,6 +13,7 @@ export function Experience() {
     <section
       ref={expRef as any}
       className="py-20 fade-in"
+      id='experience'
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -20,8 +22,8 @@ export function Experience() {
         viewport={{ once: true }}
         className="max-w-5xl mx-auto"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary via-blue-700 to-primary bg-clip-text text-transparent">
-          Experience
+        <h2 className="text-3xl md:text-4xl font-bold flex items-center mb-12 bg-gradient-to-r from-primary via-blue-700 to-primary bg-clip-text text-transparent">
+          <AnimatedPikachu /> Experience
         </h2>
         <div className="relative pl-6 md:pl-10">
           {/* Timeline vertical line */}

@@ -35,12 +35,46 @@ export const PROJECTS: Project[] = [
     id: "1",
     title: "Resume Roaster",
     description: "AI-powered resume review platform using GPT-4 for personalized feedback.",
-    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Resume+Roaster",
+    image: "/projects/diego.jpg",
     technologies: ["Next.js", "GPT-4", "PostgreSQL", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://resume-roaster.com",
     githubUrl: "https://github.com/username/resume-roaster",
   },
-  // Add more projects here
+  {
+    id: "2",
+    title: "MTI Electronics",
+    description: "E-commerce platform for electronics with custom CMS integration.",
+    image: "/projects/marisol.jpeg",
+    technologies: ["Next.js", "Payload CMS", "Tailwind CSS"],
+  },
+  {
+    id: "3",
+    title: "Epikcart",
+    description: "Multi-vendor shopping cart with internationalization support.",
+    image: "/projects/lp1.avif",
+    technologies: ["React", "Redux", "React i18n"],
+  },
+  {
+    id: "4",
+    title: "Real Estate",
+    description: "Real estate listings platform with advanced search.",
+    image: "/projects/lp2.webp",
+    technologies: ["React.js", "Redux", "Tailwind CSS"],
+  },
+  {
+    id: "5",
+    title: "Consulting Finance",
+    description: "Consulting and finance dashboard for business analytics.",
+    image: "/projects/lp3.png",
+    technologies: ["HTML", "CSS & SCSS", "Javascript"],
+  },
+  {
+    id: "6",
+    title: "devLinks",
+    description: "Developer link management with drag & drop.",
+    image: "/projects/lp1.avif",
+    technologies: ["Next.js", "Formik", "Drag & Drop"],
+  },
 ];
 
 export const TECH_STACK: TechStack[] = [

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
+import { HamburgerMenu } from "@/components/ui/hamburger-menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.className} bg-black text-gray-100 antialiased`}>
+        <ScrollProgress />
+        <HamburgerMenu />
         {children}
       </body>
     </html>

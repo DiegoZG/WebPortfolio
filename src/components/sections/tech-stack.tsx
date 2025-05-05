@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { TECH_STACK } from "@/constants/portfolio";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { AnimatedPikachu } from "@/components/icons/AnimatedPikachu";
 
 const CATEGORY_ICONS: Record<string, string> = {
   Frontend: "💻",
@@ -18,6 +19,7 @@ export function TechStack() {
     <section
       ref={techStackRef as any}
       className="py-20 slide-in-right"
+      id='tech-stack'
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -26,8 +28,8 @@ export function TechStack() {
         viewport={{ once: true }}
         className="max-w-5xl mx-auto"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary via-blue-700 to-primary bg-clip-text text-transparent">
-          Tech Stack
+        <h2 className="text-3xl md:text-4xl font-bold flex items-center mb-12 bg-gradient-to-r from-primary via-blue-700 to-primary bg-clip-text text-transparent">
+          <AnimatedPikachu /> Tech Stack
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {TECH_STACK.map((category, index) => (
@@ -51,7 +53,7 @@ export function TechStack() {
                 {category.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-4 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-primary/20 to-blue-900/40 text-primary border border-primary/30 shadow-sm backdrop-blur-sm transition-transform duration-200 hover:scale-105 hover:from-primary/40 hover:to-blue-900/60 hover:shadow-lg"
+                    className="px-4 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-primary/20 to-blue-900/40 text-white border border-primary/30 shadow-sm backdrop-blur-sm transition-transform duration-200 hover:scale-105 hover:from-primary/40 hover:to-blue-900/60 hover:shadow-lg"
                   >
                     {tech}
                   </span>
