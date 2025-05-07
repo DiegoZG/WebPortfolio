@@ -18,9 +18,10 @@ export function Hero() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="space-y-6 w-full max-w-3xl"
       >
-        <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-primary via-blue-700 to-primary bg-clip-text text-transparent flex items-center">
-          DIEGO ZEGARRA
+        <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-white via-white-700 to-white to-primary bg-clip-text text-transparent flex items-center">
+          DIEGO 
         </h1>
+        <h1 className="text-6xl md:text-8xl font-bold mb-4 ml-4 bg-gradient-to-r from-primary via-blue-700 bg-clip-text text-transparent flex items-center"> ZEGARRA </h1>
         <h2 className="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
           Frontend Developer
         </h2>

@@ -25,22 +25,22 @@ export function Experience() {
         <h2 className="text-3xl md:text-4xl font-bold flex items-center mb-12 bg-gradient-to-r from-primary via-blue-700 to-primary bg-clip-text text-transparent">
           <AnimatedPikachu /> Experience
         </h2>
-        <div className="relative pl-6 md:pl-10">
+        <div className="relative flex">
           {/* Timeline vertical line */}
-          <div className="absolute left-2 md:left-4 top-0 h-full w-1 bg-gradient-to-b from-primary via-blue-700 to-primary rounded-full opacity-60" />
-          <div className="space-y-12">
+          <div className="absolute left-10 top-0 h-full w-1 bg-gradient-to-b from-primary via-blue-700 to-primary rounded-full opacity-70 z-10" />
+          <div className="flex flex-col gap-16 w-full ml-0 md:ml-0">
             {EXPERIENCES.map((experience, index) => (
-              <motion.div
-                key={experience.id}
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.12 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
+              <div key={experience.id} className="relative flex items-center group min-h-[180px]">
                 {/* Timeline dot */}
-                <span className="absolute -left-5 md:-left-7 top-6 w-4 h-4 rounded-full bg-gradient-to-br from-primary via-blue-700 to-primary shadow-lg border-2 border-white/20 animate-pulse" />
-                <div className="bg-white/5 backdrop-blur-md border border-white/10 shadow-xl rounded-2xl p-8 ml-2 md:ml-6 transition-all duration-300 hover:shadow-2xl">
+                <span className="absolute left-10 top-1/2 -translate-y-1/2 z-20 w-6 h-6 rounded-full bg-gradient-to-br from-primary via-blue-700 to-primary shadow-lg border-4 border-background group-hover:scale-110 transition-transform duration-300" />
+                {/* Card */}
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.12 }}
+                  viewport={{ once: true }}
+                  className="ml-24 bg-white/5 backdrop-blur-md border border-white/10 shadow-xl rounded-2xl p-8 w-full max-w-2xl relative z-30"
+                >
                   <h3 className="text-lg md:text-2xl font-bold text-primary mb-1 bg-gradient-to-r from-primary via-blue-700 to-primary bg-clip-text text-transparent">
                     {experience.title}
                   </h3>
@@ -63,8 +63,10 @@ export function Experience() {
                       </span>
                     ))}
                   </div>
-                </div>
-              </motion.div>
+                  {/* Pointer to dot */}
+                  <span className="absolute -left-12 top-1/2 -translate-y-1/2 w-12 h-1 bg-gradient-to-r from-primary/70 to-transparent rounded-l-full z-20" />
+                </motion.div>
+              </div>
             ))}
           </div>
         </div>

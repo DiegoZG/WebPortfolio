@@ -46,6 +46,7 @@ export const PROJECTS: Project[] = [
     description: "E-commerce platform for electronics with custom CMS integration.",
     image: "/projects/marisol.jpeg",
     technologies: ["Next.js", "Payload CMS", "Tailwind CSS"],
+    liveUrl: "https://resume-roaster.com",
   },
   {
     id: "3",
@@ -53,6 +54,7 @@ export const PROJECTS: Project[] = [
     description: "Multi-vendor shopping cart with internationalization support.",
     image: "/projects/lp1.avif",
     technologies: ["React", "Redux", "React i18n"],
+    liveUrl: "https://resume-roaster.com",
   },
   {
     id: "4",
@@ -60,6 +62,7 @@ export const PROJECTS: Project[] = [
     description: "Real estate listings platform with advanced search.",
     image: "/projects/lp2.webp",
     technologies: ["React.js", "Redux", "Tailwind CSS"],
+    liveUrl: "https://resume-roaster.com",
   },
   {
     id: "5",
@@ -67,6 +70,7 @@ export const PROJECTS: Project[] = [
     description: "Consulting and finance dashboard for business analytics.",
     image: "/projects/lp3.png",
     technologies: ["HTML", "CSS & SCSS", "Javascript"],
+    liveUrl: "https://resume-roaster.com",
   },
   {
     id: "6",
@@ -74,6 +78,7 @@ export const PROJECTS: Project[] = [
     description: "Developer link management with drag & drop.",
     image: "/projects/lp1.avif",
     technologies: ["Next.js", "Formik", "Drag & Drop"],
+    liveUrl: "https://resume-roaster.com",
   },
 ];
 
