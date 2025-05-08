@@ -57,7 +57,7 @@ export function Experience() {
                     {experience.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-4 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-primary/20 to-blue-900/40 text-primary border border-primary/30 shadow-sm backdrop-blur-sm transition-transform duration-200 hover:scale-105 hover:from-primary/40 hover:to-blue-900/60 hover:shadow-lg"
+                        className="px-4 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-primary/20 to-blue-900/40 text-white border border-primary/30 shadow-sm backdrop-blur-sm transition-transform duration-200 hover:scale-105 hover:from-primary/40 hover:to-blue-900/60 hover:shadow-lg"
                       >
                         {tech}
                       </span>

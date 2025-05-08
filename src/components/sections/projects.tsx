@@ -80,6 +80,7 @@ export function Projects() {
                 onFocus={() => { setActiveIdx(idx); setIconVisibleIdx(null); }}
                 tabIndex={0}
                 className={`group cursor-pointer flex flex-col md:flex-row md:items-center md:gap-6 p-4 rounded-xl transition-all duration-200 ${activeIdx === idx ? "bg-primary/10 shadow-lg scale-[1.03]" : "bg-white/5"}`}
+                onClick={() => window.open(project.liveUrl, '_blank')}
               >
                 {/* Mobile image preview */}
                 <div className="block md:hidden mb-3 w-full">
@@ -92,7 +93,7 @@ export function Projects() {
                   />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-1">
+                  <div className="flex items-center gap-2 mb-1" >
                     <span className="text-lg font-mono text-gray-500">{String(idx + 1).padStart(2, "0")}.</span>
                     <AnimatedTitle
                       title={project.title}
