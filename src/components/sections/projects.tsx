@@ -53,15 +53,15 @@ export function Projects() {
   const [iconVisibleIdx, setIconVisibleIdx] = useState<number | null>(null);
   const rowRefs = useRef<(HTMLLIElement | null)[]>([]);
 
-  const getImageTop = () => {
-    if (typeof window === "undefined" || activeIdx === null) return 0;
-    const row = rowRefs.current[activeIdx];
-    if (!row) return 0;
-    const rect = row.getBoundingClientRect();
-    const containerRect = row.parentElement?.getBoundingClientRect();
-    if (!containerRect) return 0;
-    return rect.top - containerRect.top;
-  };
+  // const getImageTop = () => {
+  //   if (typeof window === "undefined" || activeIdx === null) return 0;
+  //   const row = rowRefs.current[activeIdx];
+  //   if (!row) return 0;
+  //   const rect = row.getBoundingClientRect();
+  //   const containerRect = row.parentElement?.getBoundingClientRect();
+  //   if (!containerRect) return 0;
+  //   return rect.top - containerRect.top;
+  // };
 
   return (
     <section id="projects" className="py-20">
@@ -89,7 +89,7 @@ export function Projects() {
                     alt={project.title}
                     width={600}
                     height={400}
-                    className="rounded-lg object-cover w-full h-40"
+                    className="rounded-lg object-cover object-top w-full h-40 sm:h-60 md:h-80"
                   />
                 </div>
                 <div className="flex-1">
@@ -125,12 +125,14 @@ export function Projects() {
                 animate={{
                   opacity: 1,
                   x: 0,
-                  y: getImageTop(),
+                  // y: getImageTop(), //uncomment this if we want the functionily of moving the image lower and lower
+                  y: 0,
                   transition: { type: "spring", stiffness: 120, damping: 18, duration: 0.4 },
                 }}
                 exit={{ opacity: 0, x: -40 }}
                 transition={{ duration: 0.4 }}
-                className="w-full h-[340px] flex items-center justify-center absolute left-0"
+                // h-[340]px was previously
+                className="w-full h-[650px] flex items-center justify-center absolute left-0"
                 style={{ top: 0 }}
               >
                 <Image
@@ -138,7 +140,8 @@ export function Projects() {
                   alt={PROJECTS[activeIdx]?.title || "Project Preview"}
                   width={600}
                   height={400}
-                  className="rounded-lg object-cover w-full h-full shadow-2xl"
+                  //added object top to show top of image
+                  className="rounded-lg object-cover object-top w-full h-full shadow-2xl"
                 />
               </motion.div>
             )}
