@@ -7,8 +7,8 @@ export const EXPERIENCES: Experience[] = [
     company: "Walmart",
     startDate: "2025-01",
     endDate: "Present",
-    description: "Leading frontend development for Sam's Club e-commerce platform, focusing on performance optimization and user experience.",
-    technologies: ["React", "TypeScript", "Next.js", "Redux", "Tailwind CSS"],
+    description: "Building and optimizing React Native experiences for Sam's Club associates, with focus on performance, accessibility, and fraud detection.",
+    technologies: ["React Native", "TypeScript", "Redux", "Tailwind CSS", "Jest"],
   },
   {
     id: "2",
@@ -16,8 +16,8 @@ export const EXPERIENCES: Experience[] = [
     company: "Foundry",
     startDate: "2023-08",
     endDate: "2025-01",
-    description: "Developed and maintained multiple client projects using modern web technologies.",
-    technologies: ["React", "JavaScript", "SASS", "Bootstrap"],
+    description: "Delivered scalable web apps for media clients, driving revenue through modern, maintainable code.",
+    technologies: ["React", "JavaScript", "SASS", "Bootstrap", "Vue"],
   },
   {
     id: "3",
@@ -25,8 +25,8 @@ export const EXPERIENCES: Experience[] = [
     company: "Triblio",
     startDate: "2021-05",
     endDate: "2023-07",
-    description: "Contributed to various web applications while completing education.",
-    technologies: ["React", "JavaScript", "HTML", "CSS"],
+    description: "Shipped features across the stack for B2B marketing tools while ramping up in a professional dev environment.",
+    technologies: ["React", "JavaScript", "HTML", "CSS", "Vue"],
   },
 ];
 
