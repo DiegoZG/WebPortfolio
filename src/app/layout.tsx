@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Diego Zegarra | Frontend Developer",
-  description: "Frontend developer with 3+ years of experience building scalable, high-performance web applications.",
+  description: "Frontend developer with 5+ years of experience building scalable, high-performance web applications.",
   keywords: ["frontend developer", "react", "next.js", "typescript", "web development"],
 };
 

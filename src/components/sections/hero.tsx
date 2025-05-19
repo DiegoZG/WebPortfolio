@@ -26,7 +26,7 @@ export function Hero() {
           Frontend Developer
         </h2>
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mb-12 leading-relaxed">
-          Hi! I'm Diego, a creative frontend developer with 3+ years of experience
+          Hi! I'm Diego, a creative frontend developer with 5+ years of experience
           building scalable, high-performance web applications.
         </p>
         <div className="flex gap-4 md:justify-start justify-center">
